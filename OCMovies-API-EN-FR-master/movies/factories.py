@@ -56,7 +56,7 @@ class GenreFactory(factory.django.DjangoModelFactory):
             'Family',
             'Romance',
             'Horror',
-            'Comedy',
+            'Action',
             'Biography',
             'Fantasy',
             'Film-Noir',
