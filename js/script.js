@@ -34,3 +34,32 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('nav_black');
   }
 });
+
+const sliders = document.querySelector(".carouselbox");
+var scrollPerClick;
+var scrollAmount = 0;
+var ImagePadding = 20;
+
+scrollPerClick = document.querySelector(".img-1").clientWidth + ImagePadding;
+
+function sliderScrollLeft() {
+  sliders.scrollTo({
+    top: 0,
+    left: (scrollAmount -= scrollPerClick),
+    behavior: "smooth"
+  });
+
+  if(scrollAmount < 0) {
+    scrollAmount = 0
+  }
+}
+
+function sliderScrollRight() {
+  if(scrollAmount <= sliders.scrollWidth - sliders.clientWidth) {
+    sliders.scrollTo({
+      top: 0,
+      left: (scrollAmount += scrollPerClick),
+      behavior: "smooth"
+    })
+  }
+}

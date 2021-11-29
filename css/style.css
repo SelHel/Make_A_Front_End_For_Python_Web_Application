@@ -114,14 +114,57 @@ body {
 }
 /* ----------------------------------- END BEST MOVIE SECTION ----------------------------------*/
 
-/* ----------------------------------- CATEGORIES ----------------------------------------------*/
-.category {
-    color: white;
-    padding-top: 30px;
+/* ----------------------------------- CAROUSEL----------------------------------------------*/
+.carousel {
+    height: 250px;
+    width: 100%;
+    padding-top: 25px;
 }
 
-.category_name {
-    font-size: 28px;
-    font-weight: 800;
-    margin-left: 20px;
+.carousel .category_title {
+    color: white;
+}
+
+.carousel .switchLeft,
+.carousel .switchRight {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: sans-serif;
+    height: 100%;
+    width: 30px;
+    line-height: 250px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.carousel .switchLeft {
+    float: left;
+}
+
+.carousel .switchRight {
+    float: right;
+}
+
+.carouselbox {
+    height: 225px;
+    width: auto;
+    overflow: scroll;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.carouselbox img {
+    height: 200px;
+    background-size: cover;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.carouselbox img:hover {
+    transform: scale(1.1);
 }
