@@ -115,40 +115,50 @@ body {
 /* ----------------------------------- END BEST MOVIE SECTION ----------------------------------*/
 
 /* ----------------------------------- CAROUSEL----------------------------------------------*/
-.carousel {
-    height: 250px;
+.slideshow-container {
+    height: 260px;
     width: 100%;
-    padding-top: 25px;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
 }
 
-.carousel .category_title {
+.category_title {
     color: white;
+    padding-left: 36px;
 }
 
-.carousel .switchLeft,
-.carousel .switchRight {
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 25px;
-    font-family: sans-serif;
-    height: 100%;
-    width: 30px;
-    line-height: 250px;
-    text-align: center;
-    cursor: pointer;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.carousel .switchLeft {
-    float: left;
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.carousel .switchRight {
-    float: right;
-}
+/* On hover, the buttons color change */
+.prev:hover, .next:hover {
+    color: #b4b4b4;
+  }
 
-.carouselbox {
+.mySlides {
     height: 225px;
-    width: auto;
+    width: 95%;
+    margin: 0 auto;
     overflow: scroll;
     white-space: nowrap;
     display: inline-block;
@@ -157,7 +167,7 @@ body {
     align-items: center;
 }
 
-.carouselbox img {
+.mySlides img {
     height: 200px;
     background-size: cover;
     margin-right: 10px;
@@ -165,6 +175,6 @@ body {
     transition: 0.5s ease;
 }
 
-.carouselbox img:hover {
+.mySlides img:hover {
     transform: scale(1.1);
 }

@@ -35,12 +35,14 @@ window.addEventListener('scroll', () => {
   }
 });
 
-const sliders = document.querySelector(".carouselbox");
+// Slideswhow container Next/previous controls
+
+const sliders = document.querySelector(".mySlides");
 var scrollPerClick;
 var scrollAmount = 0;
 var ImagePadding = 20;
 
-scrollPerClick = document.querySelector(".img-1").clientWidth + ImagePadding;
+scrollPerClick = document.querySelector(".img").clientWidth + ImagePadding;
 
 function sliderScrollLeft() {
   sliders.scrollTo({
