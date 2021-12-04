@@ -1,12 +1,9 @@
-* {
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #141414;
+    background-color: #141414;  
 }
 
 /* ----------------------------- NAV BAR -------------------------------*/
@@ -20,6 +17,7 @@ body {
     left: 0;
     background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0));
     padding-left: 50px;
+    z-index: 1;
     transition: background-color 1s ease-out;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
@@ -108,31 +106,32 @@ body {
 }
 
 .best_movie_fadeBottom {
-    margin-top: 282px;
+    margin-top: 95px;
     height: 118px;
     background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61), #111);
 }
 /* ----------------------------------- END BEST MOVIE SECTION ----------------------------------*/
 
-/* ----------------------------------- CAROUSEL----------------------------------------------*/
-.slideshow-container {
-    height: 260px;
+/* ----------------------------------- CAROUSEL ----------------------------------------------*/
+.carousel_container {
+    height: 375px;
     width: 100%;
     position: relative;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .category_title {
     color: white;
-    padding-left: 36px;
+    margin: 0;
+    padding-left: 50px;
 }
 
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 55%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -150,13 +149,13 @@ body {
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, the buttons color change */
+/* On hover, add a grey background color */
 .prev:hover, .next:hover {
-    color: #b4b4b4;
+    background-color: rgba(110, 110, 110, 0.4);
   }
 
 .mySlides {
-    height: 225px;
+    height: 350px;
     width: 95%;
     margin: 0 auto;
     overflow: scroll;
@@ -168,13 +167,152 @@ body {
 }
 
 .mySlides img {
-    height: 200px;
+    height: 325px;
     background-size: cover;
-    margin-right: 10px;
+    margin-left: 10px;
     cursor: pointer;
     transition: 0.5s ease;
 }
 
 .mySlides img:hover {
     transform: scale(1.1);
+}
+
+/* ----------------------------------- END CAROUSEL ----------------------------------------------*/
+
+/* ----------------------------------- FOOTER ----------------------------------------------*/
+footer{
+    display: flex;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+
+.footer_distributed{
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 0px;
+}
+    
+.footer_distributed .footer_left,
+.footer_distributed .footer_center,
+.footer_distributed .footer_right{
+    display: inline-block;
+    vertical-align: top;
+}
+    
+.footer_distributed .footer_left{
+    width: 40%;
+}
+    
+.footer_distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Helvetica', cursive;
+    margin: 0;
+}
+    
+    
+.footer_distributed .footer_links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+    
+.footer_distributed .footer_links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+    
+.footer_distributed .footer_company_name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+    
+    
+.footer_distributed .footer_center{
+    width: 35%;
+}
+    
+.footer_distributed .footer_center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+    
+.footer_distributed .footer_center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+    
+.footer_distributed .footer_center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+    
+.footer_distributed .footer_center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+    
+.footer_distributed .footer_center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+}
+    
+.footer_distributed .footer_right{
+    width: 20%;
+}
+    
+.footer_distributed .footer_company_about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+    
+.footer_distributed .footer_company_about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+    
+.footer_distributed .footer_icons{
+    margin-top: 25px;
+}
+    
+.footer_distributed .footer_icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
 }
