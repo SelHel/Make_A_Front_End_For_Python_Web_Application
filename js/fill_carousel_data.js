@@ -3,7 +3,7 @@ var url_top_action = "http://localhost:8000/api/v1/titles/?genre=Action&sort_by=
 var url_top_adventure = "http://localhost:8000/api/v1/titles/?genre=Adventure&sort_by=-imdb_score%2C-votes"
 var url_top_horror = "http://localhost:8000/api/v1/titles/?genre=Horror&sort_by=-imdb_score%2C-votes"
 
-getBestMovies(url_top_movies, 'TopMovies');
+getBestMovies(url_top_movies, 'TopMovies', 1);
 
 getBestMovies(url_top_action, 'TopAction');
 
