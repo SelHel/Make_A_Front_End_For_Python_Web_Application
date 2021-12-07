@@ -36,10 +36,10 @@ async function getBestMovie() {
     )
 
     console.log(best_movie);
-    document.getElementsByClassName("best_movie")[0].style.backgroundImage = "url('" + best_movie.data.image_url + "')";
+    document.getElementsByClassName("best_movie_picture")[0].src = best_movie.data.image_url;
     document.getElementsByClassName("best_movie_title")[0].innerText = best_movie.data.title;
     document.getElementsByClassName("best_movie_description")[0].innerText = best_movie.data.description;
-    document.getElementById("best_movie_btn").onclick = openModal(best_movie_url);
+    document.getElementById("best_movie_btn").setAttribute('onclick', 'openModal(\'' + best_movie_url + '\')');
 }
 
 getBestMovie();

@@ -15,14 +15,14 @@
 /* Modal Content */
 .modal_content {
     background-color: #141414;
+    color: white;
     margin: 5% auto;
     padding: 20px;
     border-radius: 6px;
     border: 1px solid #aaa;
-    width: 50%;
+    text-align: center;
     display: block;
-    position: relative;
-    color: white;
+    width: 50%;
 }
   
 /* The Close Button */
@@ -44,32 +44,7 @@
     cursor: pointer;
 }
 
-#movie_picture {
-    width: 182px;
-    height: 268px;
-    position: relative;
-    left: 0;
-}
-
-
-#right {
-    top: 20px;
-    position: relative;
-    width: 70%;
-    float: right;
-}
-
-#right p {
-    font-size: 16px;
-}
-
 #movie_title {
     margin: 0;
     font-size: 38px;
-}
-
-#bottom {
-    position: relative;
-    width: 100%;
-    font-size: 16px;
 }
