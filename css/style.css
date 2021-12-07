@@ -74,10 +74,14 @@ body {
     padding-top: 80px;
 }
 
+.best_movie_picture {
+    border-radius: 0.2vw;
+}
+
 .best_movie_title {
     margin: 0;
     padding: 0;
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 800;
 }
 
@@ -140,6 +144,10 @@ body {
     user-select: none;
 }
 
+.prev {
+    visibility: hidden;
+}
+
 /* Position the "next button" to the right */
 .next {
     right: 0;
@@ -149,7 +157,7 @@ body {
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
     background-color: rgba(110, 110, 110, 0.4);
-  }
+}
 
 .mySlides {
     height: 350px;
@@ -185,7 +193,7 @@ body {
 
 /* ----------------------------------- END CAROUSEL ----------------------------------------------*/
 
-/* ----------------------------------- FOOTER ----------------------------------------------*/
+/* -------------------------------------- FOOTER -------------------------------------------------*/
 footer{
     display: flex;
     height: auto;
@@ -321,3 +329,4 @@ footer{
     margin-right: 3px;
     margin-bottom: 5px;
 }
+/* ----------------------------------- END FOOTER ----------------------------------------------*/

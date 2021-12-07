@@ -22,7 +22,7 @@ function checkIfRatedExists(data) {
     if (data === null || data === "none") {
         return "Inconnu"
     }
-    if (data.includes("Not rated") === true || data.includes("unkown") === true) {
+    if (data.includes("Not rated") || data.includes("unkown")) {
         return "Inconnu"
     }
     return data

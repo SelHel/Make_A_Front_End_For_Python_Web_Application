@@ -29,13 +29,13 @@
                 <h1 class="best_movie_title"></h1>
                 <!-- Open the Modal -->
                 <button id="best_movie_btn" class="best_movie_button" onclick="">Plus d'infos</button>
-                <p class="best_movie_description">Huit voleurs font une prise d'otages dans la Maison royale de la Monnaie d'Espagne, tandis qu'un génie du crime manipule la police pour mettre son plan à exécution.</p>
+                <p class="best_movie_description"></p>
             </div>
         </section>
         <!-- End Best movie section -->
 
-        <!-- Carousel containers -->
-        <section>
+         <!-- Carousel containers -->
+         <section class="top_movies_category">
             <div class="carousel_container">
                 <h2 class="category_title">Films les mieux notés</h2>
                 <div id="TopMovies" class="mySlides">
@@ -48,59 +48,66 @@
                     <img class="img" src="" alt=""/>
                 </div>
                 <!-- Next and previous buttons -->
-                <a class="prev" onclick="sliderScrollLeft('#TopMovies')">&#10094;</a>
-                <a class="next" onclick="sliderScrollRight('#TopMovies')">&#10095;</a>
+                <a class="prev" onclick="sliderScroll('top_movies_category', 'left')">&#10094;</a>
+                <a class="next" onclick="sliderScroll('top_movies_category', 'right')">&#10095;</a>
             </div>
         </section>
 
-        <div class="carousel_container">
-            <h2 class="category_title">Films d'action</h2>
-            <div id="TopAction" class="mySlides">
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
+        <section class="top_action_category">
+            <div class="carousel_container">
+                <h2 class="category_title">Films d'action</h2>
+                <div id="TopAction" class="mySlides">
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="sliderScroll('top_action_category', 'left')">&#10094;</a>
+                <a class="next" onclick="sliderScroll('top_action_category', 'right')">&#10095;</a>
             </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="sliderScrollLeft('#TopAction')">&#10094;</a>
-            <a class="next" onclick="sliderScrollRight('#TopAction')">&#10095;</a>
-        </div>
+        </section>
 
-        <div class="carousel_container">
-            <h2 class="category_title">Films d'aventure</h2>
-            <div id="TopAdventure" class="mySlides">
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
+        <section class="top_adventure_category">
+            <div class="carousel_container">
+                <h2 class="category_title">Films d'aventure</h2>
+                <div id="TopAdventure" class="mySlides">
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="sliderScroll('top_adventure_category', 'left')">&#10094;</a>
+                <a class="next" onclick="sliderScroll('top_adventure_category', 'right')">&#10095;</a>
             </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="sliderScrollLeft('#TopAdventure')">&#10094;</a>
-            <a class="next" onclick="sliderScrollRight('#TopAdventure')">&#10095;</a>
-        </div>
+        </section>
 
-        <div class="carousel_container">
-            <h2 class="category_title">Films d'horreur</h2>
-            <div id="TopHorror" class="mySlides">
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
-                <img class="img" src="" alt=""/>
+        <section class="top_horror_category">
+            <div class="carousel_container">
+                <h2 class="category_title">Films d'horreur</h2>
+                <div id="TopHorror" class="mySlides">
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                    <img class="img" src="" alt=""/>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="sliderScroll('top_horror_category', 'left')">&#10094;</a>
+                <a class="next" onclick="sliderScroll('top_horror_category', 'right')">&#10095;</a>
             </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="sliderScrollLeft('TopHorror')">&#10094;</a>
-            <a class="next" onclick="sliderScrollRight('TopHorror')">&#10095;</a>
-        </div>
+        </section>
         <!-- End carousel containers -->
+        
         <!-- Footer -->
         <footer class="footer_distributed">
             <div class="footer_left">
@@ -139,6 +146,8 @@
                 </div>
             </div>
         </footer>
+        <!-- End Footer -->
+
         <!-- The Modal -->
         <section>
             <div id="movie_modal" class="modal">
@@ -161,6 +170,7 @@
             </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/nav_bar.js" defer></script>
         <script src="js/carousel.js" defer></script>
         <script src="js/modal.js" defer></script>
         <script src="js/show_movie_data.js" defer></script>
