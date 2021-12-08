@@ -25,10 +25,10 @@
         <!-- Best movie section -->
         <section class="best_movie">
             <div class="best_movie_content">
-                <img class="best_movie_picture" src="" alt="Best movie picutre"/>
-                <h1 class="best_movie_title"></h1>
+                <img class="best_movie_picture" src="img/api-not-connected.PNG" alt="Best movie picutre"/>
+                <h1 class="best_movie_title">Film le mieux noté</h1>
                 <!-- Open the Modal -->
-                <button id="best_movie_btn" class="best_movie_button" onclick="">Plus d'infos</button>
+                <button id="best_movie_btn" class="best_movie_button" onclick="openModal()">Plus d'infos</button>
                 <p class="best_movie_description"></p>
             </div>
         </section>
@@ -39,13 +39,13 @@
             <div class="carousel_container">
                 <h2 class="category_title">Films les mieux notés</h2>
                 <div id="TopMovies" class="mySlides">
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
                 </div>
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="sliderScroll('top_movies_category', 'left')">&#10094;</a>
@@ -57,13 +57,13 @@
             <div class="carousel_container">
                 <h2 class="category_title">Films d'action</h2>
                 <div id="TopAction" class="mySlides">
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
                 </div>
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="sliderScroll('top_action_category', 'left')">&#10094;</a>
@@ -75,13 +75,13 @@
             <div class="carousel_container">
                 <h2 class="category_title">Films d'aventure</h2>
                 <div id="TopAdventure" class="mySlides">
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
                 </div>
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="sliderScroll('top_adventure_category', 'left')">&#10094;</a>
@@ -93,13 +93,13 @@
             <div class="carousel_container">
                 <h2 class="category_title">Films d'horreur</h2>
                 <div id="TopHorror" class="mySlides">
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
-                    <img class="img" src="" alt=""/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
+                    <img class="img" src="img/api-not-connected.PNG" alt="API NOT CONNECTED"/>
                 </div>
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="sliderScroll('top_horror_category', 'left')">&#10094;</a>
@@ -154,22 +154,23 @@
                 <!-- Modal content -->
                 <div class="modal_content">
                     <span class="modal_close">&times;</span>
-                    <img id="movie_picture" src="" alt="">
-                    <h1 id="movie_title"></h1>
-                    <p id="movie_genres"></p>
-                    <p id="movie_release_date"></p>
-                    <p id="movie_rated"></p>
-                    <p id="movie_imdb_score"></p>
-                    <p id="movie_directors"></p>
-                    <p id="movie_actors"></p>
-                    <p id="movie_duration"></p>
-                    <p id="movie_countries"></p>
-                    <p id="movie_box_office_result"></p>
+                    <img id="movie_picture" src="img/api-not-connected.PNG" alt="API NOT CONNECTED">
+                    <h1 id="movie_title">Movie title</h1>
+                    <p id="movie_genres">Movie Genres</p>
+                    <p id="movie_release_date">Movie release date</p>
+                    <p id="movie_rated">Movie rated</p>
+                    <p id="movie_imdb_score">Movie imdb score</p>
+                    <p id="movie_directors">Movie directors</p>
+                    <p id="movie_actors">Movie actors</p>
+                    <p id="movie_duration">Movie duration</p>
+                    <p id="movie_countries">Movie countries</p>
+                    <p id="movie_box_office_result">Movie box</p>
                     <p id="movie_synopsis"></p>
                 </div>
             </div>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/axios_url.js" defer></script>
         <script src="js/nav_bar.js" defer></script>
         <script src="js/carousel.js" defer></script>
         <script src="js/modal.js" defer></script>

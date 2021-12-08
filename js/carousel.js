@@ -14,7 +14,6 @@ function sliderScroll(movie_category, side) {
 	var scrollPerClick = 400;
 	var slider_select = "."+movie_category+" .mySlides";
 	var sliders = document.querySelector(slider_select);
-	console.log(movie_category);
 
 	if (side === "left") {
 		sliders.scrollTo({top: 0, left: (scrollAmount -= scrollPerClick), behavior: "smooth"});
@@ -26,9 +25,6 @@ function sliderScroll(movie_category, side) {
 	}
 
 	scrollAmountlist[i] = scrollAmount
-
-	console.log("Scroll Amount: ", scrollAmount);
-	console.log(sliders.scrollWidth - sliders.clientWidth);
 	
 	if (scrollAmount === 0) {prev.style.visibility = "hidden";} 
 	else if (scrollAmount != 0 && scrollAmount < sliders.scrollWidth - sliders.clientWidth) {

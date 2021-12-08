@@ -1,7 +1,6 @@
 // Get the best movie modal
 var movieModal = document.getElementById("movie_modal");
 
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("modal_close")[0];
 
