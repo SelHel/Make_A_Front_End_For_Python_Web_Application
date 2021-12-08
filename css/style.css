@@ -75,6 +75,8 @@ body {
 }
 
 .best_movie_picture {
+    height: 268px;
+    width: 182px;
     border-radius: 0.2vw;
 }
 
@@ -173,6 +175,7 @@ body {
 .mySlides img {
     height: 325px;
     background-size: cover;
+    border-radius: 0.2vw;
     margin-left: 20px;
     cursor: pointer;
     -webkit-transition: 0.5s ease; /* Safari et Chrome */
@@ -193,14 +196,14 @@ body {
 /* ----------------------------------- END CAROUSEL ----------------------------------------------*/
 
 /* -------------------------------------- FOOTER -------------------------------------------------*/
-footer{
+footer {
     display: flex;
     height: auto;
     width: 100vw;
     padding-top: 40px;
 }
 
-.footer_distributed{
+.footer_distributed {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
@@ -217,84 +220,74 @@ footer{
     vertical-align: top;
 }
     
-.footer_distributed .footer_left{
+.footer_distributed .footer_left {
     width: 40%;
 }
     
-.footer_distributed h3{
+.footer_distributed h3 {
     color:  #ffffff;
     font: normal 36px 'Helvetica', cursive;
     margin: 0;
 }
     
     
-.footer_distributed .footer_links{
+.footer_distributed .footer_links {
     color:  #ffffff;
     margin: 20px 0 12px;
     padding: 0;
 }
     
-.footer_distributed .footer_links a{
+.footer_distributed .footer_links a {
     display:inline-block;
     line-height: 1.8;
     text-decoration: none;
     color:  inherit;
 }
     
-.footer_distributed .footer_company_name{
+.footer_distributed .footer_company_name {
     color:  #8f9296;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
 }
-    
-    
+
 .footer_distributed .footer_center{
-    width: 35%;
+    width: 40%;
 }
-    
-.footer_distributed .footer_center i{
-    background-color:  #33383b;
-    color: #ffffff;
+
+.footer_distributed .footer_center div {
+    vertical-align: middle;
+}
+
+.footer_distributed .footer_center a {
     font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
+    background-color: white;
+    border-radius: 2px;
     text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+.footer_distributed .footer_center img {
+    width: 25px;
+    height: 25px;
     vertical-align: middle;
 }
     
-.footer_distributed .footer_center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
-}
     
 .footer_distributed .footer_center p{
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
-    margin:0;
+    text-align: center;
+    margin-left: 10px;
 }
     
-.footer_distributed .footer_center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
-}
-    
-.footer_distributed .footer_center p a{
-    color:  #5383d3;
-    text-decoration: none;;
-}
-    
-.footer_distributed .footer_right{
+.footer_distributed .footer_right {
     width: 20%;
 }
     
-.footer_distributed .footer_company_about{
+.footer_distributed .footer_company_about {
     line-height: 20px;
     color:  #92999f;
     font-size: 13px;
@@ -302,7 +295,7 @@ footer{
     margin: 0;
 }
     
-.footer_distributed .footer_company_about span{
+.footer_distributed .footer_company_about span {
     display: block;
     color:  #ffffff;
     font-size: 14px;
@@ -310,16 +303,16 @@ footer{
     margin-bottom: 20px;
 }
     
-.footer_distributed .footer_icons{
+.footer_distributed .footer_icons {
     margin-top: 25px;
 }
     
-.footer_distributed .footer_icons a{
+.footer_distributed .footer_icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color:  #33383b;
+    background-color: white;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
@@ -327,5 +320,11 @@ footer{
     line-height: 35px;
     margin-right: 3px;
     margin-bottom: 5px;
+}
+
+.footer_distributed .footer_icons a img {
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
 }
 /* ----------------------------------- END FOOTER ----------------------------------------------*/
